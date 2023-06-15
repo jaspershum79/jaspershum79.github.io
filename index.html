@@ -1,87 +1,144 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
+
 <html lang="zh">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 真心話大冒險</title>
+
+    <title> Lunch & Play</title>
+
     <style>
+
         body {
+
             font-family: Arial, sans-serif;
+
             text-align: center;
+
             background-color: #f0f0f0;
+
         }
+
+
 
         h1 {
+
             margin-top: 50px;
+
             color: #333;
+
         }
+
+
 
         button {
+
             background-color: #4CAF50;
+
             border: none;
+
             color: white;
+
             padding: 15px 32px;
+
             text-align: center;
+
             text-decoration: none;
+
             display: inline-block;
+
             font-size: 16px;
+
             margin: 10px 2px;
+
             cursor: pointer;
+
         }
+
     </style>
+
 </head>
+
 <body>
-    <h1>真心話大冒險</h1>
-    <button id="truth">隨機抽取真心話</button>
-    <button id="dare">隨機抽取大冒險</button>
+
+    <h1>Lunch & Play</h1>
+
+    <button id="Lunch">Lunch</button>
+
+    <button id="Play">Play</button>
+
     <p id="output"></p>
 
+
+
     <script>
-        const truths = [
-            "RC裏面邊個最靚仔？",
-            "RC裏面邊個最靚女？",
-            "你最後悔的一件事是什麼？",
-            "説出曾經做過最尷尬既事",
-            "你今日玩得最開心既環節係邊part？",
-            "你最喜歡的食物是什麼？",
-            "你的初戀是什麼時候？",
-            "你的第一次失戀系因為咩事，如果系A0就需要講一個現在目標既三個特點",
-            "上次戀愛係幾時，如果A0就要説出自己既理想型",
-            "你最喜歡和最討厭的人是誰？",
-            "你有過哪個不為人知的秘密？",
-            "你曾經為了什麼事情哭過？",
-            "你曾經做過的最瘋狂的事情是什麼？",
-            "你中意系邊個地方表白？",
+
+        const Lucnch = [
+
+            "譚仔",
+
+            "老鼠頭",
+
+            "韓樂",
+
+            "炸雞",
+
+            "淫咖哩",
+
+            "車仔麵",
+
         ];
 
-        const dares = [
-            "唱一首飲歌（一分鐘）",
-            "到中間唱一加一等於阿儀",
-            "對著你左手邊既人，唱一首你覺得最合適佢既歌",
-            "對著你右手邊既人，用一首歌唱出想對佢講既心聲",
-            "行到全部人中間跳一段一分鐘既舞",
-            "到中間跳我是個茶壺",
-            "大嗌我愛_ _ !",
-            "揾一個同性十指緊扣直至下個游戲回合結束",
-            "揾一個異性十指緊扣直至下個游戲回合結束",
-            "做一個搞笑的表情，讓大家拍照",
-            "和身邊的某人擁抱30秒",
-            "向一位朋友表白（假裝的也可以）",
-            "扮演一個動物(猴子/大象），讓大家猜是什麼",
-            "用最高的音量大喊:郵差叔叔送信迅速送出",
+
+
+        const Play = [
+
+            "羽毛球",
+
+            "壁球",
+
+            "乒乓球",
+
+            "桌球",
+
+            "唱K",
+
+            "網球",
+
+            "籃球",
+
+            "保齡球",
         ];
+
+
 
         function getRandomItem(arr) {
+
             return arr[Math.floor(Math.random() * arr.length)];
+
         }
 
-        document.getElementById("truth").addEventListener("click", () => {
-            document.getElementById("output").innerText = "真心話：" + getRandomItem(truths);
+
+
+        document.getElementById("Lucnch").addEventListener("click", () => {
+
+            document.getElementById("output").innerText = "Lunch：" + getRandomItem(Lunch);
+
         });
 
-        document.getElementById("dare").addEventListener("click", () => {
-            document.getElementById("output").innerText = "大冒險：" + getRandomItem(dares);
+
+
+        document.getElementById("Play").addEventListener("click", () => {
+
+            document.getElementById("output").innerText = "Play：" + getRandomItem(Play);
+
         });
+
     </script>
+
 </body>
-</html>
+
+</html>is 
